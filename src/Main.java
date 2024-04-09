@@ -1,4 +1,6 @@
 import controller.CoderController;
+import controller.ControllerEmpresa;
+import controller.ControllerVacante;
 import database.ConfigDB;
 
 import javax.swing.*;
@@ -7,6 +9,6 @@ import javax.swing.*;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        CoderController.delete();
+        ControllerVacante.crear();
     }
 }
