@@ -1,4 +1,5 @@
 import controller.CoderController;
+import controller.ContratacionController;
 import controller.VacanteController;
 
 import javax.swing.*;
@@ -74,7 +75,7 @@ public class Main {
                     }while (opcionVacante != 6);
                     break;
 
-                case 3:
+                /*case 3:
                     do {
                         opcionContratacion = Integer.parseInt(JOptionPane.showInputDialog("""
                                 1 - Crear producto
@@ -84,28 +85,28 @@ public class Main {
                                 5 - Salir 
                                  """));
 
-                        switch (opcionContratacion){
+                        *//*switch (opcionContratacion){
                             case 1:
-                                ControllerProducto.crear();
+                                ContratacionController.crear();
                                 break;
                             case 2:
-                                ControllerProducto.delete();
+                                ContratacionController.delete();
                                 break;
                             case 3:
-                                ControllerProducto.update();
+                                ContratacionController.update();
                                 break;
                             case 4:
                                 ControllerProducto.listar();
-                                break;
-                        }
+                                break;*//*
+                        }while ()*/
 
                     }while (opcionContratacion != 5);
                     break;
 
 
-            }
 
 
-        }while (opcion != 5);
+
+        }while (opcion != 4);
     }
 }
