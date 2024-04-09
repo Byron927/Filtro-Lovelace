@@ -9,7 +9,7 @@ public class Vacante {
     private int id_empresa;
     private Empresa objEmpresa;
 
-    public Vacante(int id_vacante, String titulo, String descripcion, String duracion, String estado, int id_empresa, Empresa objEmpresa) {
+/*    public Vacante(int id_vacante, String titulo, String descripcion, String duracion, String estado, int id_empresa, Empresa objEmpresa) {
         this.id_vacante = id_vacante;
         this.titulo = titulo;
         this.descripcion = descripcion;
@@ -17,16 +17,16 @@ public class Vacante {
         this.estado = estado;
         this.id_empresa = id_empresa;
         this.objEmpresa = objEmpresa;
-    }
+    }*/
 
-    public Vacante(String titulo, String descripcion, String duracion, String estado, int id_empresa, Empresa objEmpresa) {
+  /*  public Vacante(String titulo, String descripcion, String duracion, String estado, int id_empresa, Empresa objEmpresa) {
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.duracion = duracion;
         this.estado = estado;
         this.id_empresa = id_empresa;
         this.objEmpresa = objEmpresa;
-    }
+    }*/
 
     public Vacante(String titulo, String descripcion, String duracion, String estado, int id_empresa) {
         this.titulo = titulo;
@@ -34,6 +34,14 @@ public class Vacante {
         this.duracion = duracion;
         this.estado = estado;
         this.id_empresa = id_empresa;
+    }
+
+    public Vacante(int id_vacante, String titulo, String descripcion, String duracion, String estado) {
+        this.id_vacante = id_vacante;
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+        this.duracion = duracion;
+        this.estado = estado;
     }
 
     public Vacante() {
