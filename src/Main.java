@@ -23,11 +23,11 @@ public class Main {
                 case 1:
                     do {
                         opcionCoder = Integer.parseInt(JOptionPane.showInputDialog("""
-                                1 - Crear tienda
-                                2 - Eliminar tienda 
-                                3 - Actualizar tienda
-                                4 - Listar tienda
-                                5 - Salir 
+                                1 - Crear Coder
+                                2 - Eliminar Coder
+                                3 - Actualizar Coder
+                                4 - Listar Coder
+                                5 - Salir
                                 """));
 
                         switch (opcionCoder){
@@ -52,7 +52,7 @@ public class Main {
                     do {
                         opcionVacante = Integer.parseInt(JOptionPane.showInputDialog("""
                                 1 - Crear vacante
-                                2 - Eliminar vacante 
+                                2 - Eliminar vacante
                                 3 - Actualizar vacante
                                 4 - Listar vacante
                                 5 - Salir
@@ -75,37 +75,8 @@ public class Main {
                     }while (opcionVacante != 6);
                     break;
 
-                /*case 3:
-                    do {
-                        opcionContratacion = Integer.parseInt(JOptionPane.showInputDialog("""
-                                1 - Crear producto
-                                2 - Eliminar producto 
-                                3 - Actualizar producto
-                                4 - Listar producto
-                                5 - Salir 
-                                 """));
-
-                        *//*switch (opcionContratacion){
-                            case 1:
-                                ContratacionController.crear();
-                                break;
-                            case 2:
-                                ContratacionController.delete();
-                                break;
-                            case 3:
-                                ContratacionController.update();
-                                break;
-                            case 4:
-                                ControllerProducto.listar();
-                                break;*//*
-                        }while ()*/
-
                     }while (opcionContratacion != 5);
                     break;
-
-
-
-
 
         }while (opcion != 4);
     }

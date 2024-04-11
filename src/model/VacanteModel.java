@@ -31,7 +31,7 @@ public class VacanteModel implements CRUD {
                 objVacante.setTitulo(objResult.getString("titulo"));
                 objVacante.setDescripcion(objResult.getString("descripcion"));
                 objVacante.setDuracion(objResult.getString("duracion"));
-                objVacante.setDuracion(objResult.getString("estado"));
+                objVacante.setEstado(objResult.getString("estado"));
                 objVacante.setId_empresa(objResult.getInt("empresa_id"));
 
                 Empresa objEmpresa = new Empresa();
@@ -51,7 +51,6 @@ public class VacanteModel implements CRUD {
 
         ConfigDB.closeConnection();
         return listaDeVacantes;
-
     }
 
     @Override
@@ -172,5 +171,4 @@ public class VacanteModel implements CRUD {
         ConfigDB.closeConnection();
         return objVacante;
     }
-}
 }
