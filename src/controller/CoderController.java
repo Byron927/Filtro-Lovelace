@@ -42,12 +42,13 @@ public class CoderController {
         instanceModel().update(new Coder(id_coder, nombre, apellido, documento, cohorte, cv));
     }
 
-    public  static void delete(){
+    public static void delete() {
         int id_coder = Integer.parseInt(JOptionPane.showInputDialog(listarString() + "\nIngrese el id del coder que desea eliminar"));
         instanceModel().delete(id_coder);
     }
 
     public static CoderModel instanceModel() {
+
         return new CoderModel();
     }
 }
